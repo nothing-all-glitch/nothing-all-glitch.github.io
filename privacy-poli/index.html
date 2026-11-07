@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DeStock Privacy Policy</title>
+  <meta
+    name="description"
+    content="Privacy Policy for DeStock, an independent Android browser for exploring archival footage indexed by Destockd."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#111827" />
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: rgba(255, 255, 255, 0.92);
+      --surface-strong: #ffffff;
+      --text: #172033;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --accent: #5b5bd6;
+      --accent-soft: #eeeeff;
+      --shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+      --radius: 22px;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(91, 91, 214, 0.09), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 56px auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #111827 0%, #242447 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 46px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 13px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.05;
+      margin: 0 0 14px;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 720px;
+      color: #dbe3f0;
+      font-size: 1.05rem;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .meta-card {
+      padding: 14px 16px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #aeb9ca;
+      margin-bottom: 3px;
+    }
+
+    .meta-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    main {
+      background: var(--surface);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 46px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      margin-top: 34px;
+      padding-top: 34px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.42rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .notice {
+      background: var(--accent-soft);
+      border: 1px solid #d8d8ff;
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin: 26px 0 4px;
+    }
+
+    .notice strong {
+      color: #3f3fa8;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 24px 12px 6px;
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        margin: 20px auto;
+      }
+
+      .hero,
+      main {
+        padding: 26px 22px;
+        border-radius: 18px;
+      }
+
+      .meta {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.35rem;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1020;
+        --surface: rgba(16, 24, 40, 0.92);
+        --surface-strong: #101828;
+        --text: #eef2f7;
+        --muted: #9aa8ba;
+        --border: #263244;
+        --accent: #a7a7ff;
+        --accent-soft: rgba(91, 91, 214, 0.14);
+        --shadow: 0 20px 50px rgba(0, 0, 0, 0.26);
+      }
+
+      .notice {
+        border-color: rgba(167, 167, 255, 0.25);
+      }
+
+      .notice strong {
+        color: #c7c7ff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="brand">DeStock</div>
+      <h1>Privacy Policy</h1>
+      <p>
+        This policy explains what DeStock stores locally, what information may
+        be sent over the network, how that information is used, and the choices
+        available to users.
+      </p>
+
+      <div class="meta">
+        <div class="meta-card">
+          <span class="meta-label">Effective date</span>
+          <span class="meta-value">September 10, 2026</span>
+        </div>
+
+        <div class="meta-card">
+          <span class="meta-label">Publisher</span>
+          <span class="meta-value">Masood Ur Rehman</span>
+        </div>
+
+        <div class="meta-card">
+          <span class="meta-label">Privacy contact</span>
+          <span class="meta-value">
+            <a href="mailto:masoodbarkiwork@gmail.com">masoodbarkiwork@gmail.com</a>
+          </span>
+        </div>
+
+        <div class="meta-card">
+          <span class="meta-label">Public policy URL</span>
+          <span class="meta-value">https://nothing-all-glitch.github.io/privacy-poli/</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="about">
+        <h2 id="about">About DeStock</h2>
+        <p>
+          DeStock is an independent, unofficial Android browser for archival
+          footage indexed by Destockd.
+        </p>
+      </section>
+
+      <section aria-labelledby="local-data">
+        <h2 id="local-data">Information Stored on Device</h2>
+        <p>
+          DeStock stores recent searches and saved or favorite shots on the
+          user's device so the app can show search history and a local research
+          shelf. This information is stored in the app's local database.
+        </p>
+        <p>
+          The app manifest disables Android backup for this local database. If
+          a user clears app data or uninstalls DeStock, locally stored recent
+          searches and saved shots are removed from that device.
+        </p>
+      </section>
+
+      <section aria-labelledby="network-data">
+        <h2 id="network-data">Information Sent Off Device</h2>
+        <p>
+          DeStock needs internet access to browse and play archive material.
+          When a user searches, the search query is sent to Destockd. When the
+          app loads keyframes, previews, full clips, film details, collections,
+          or source links, requests may be sent to Destockd, its media CDN,
+          Archive.org, the National Archives, or other archive or source hosts
+          returned by Destockd.
+        </p>
+        <p>
+          These requests can include technical information normally sent with
+          internet traffic, such as IP address, device or network metadata,
+          request time, requested URLs, and user agent or client details.
+          DeStock does not control the retention, logging, or processing
+          practices of Destockd, its CDN, Archive.org, the National Archives,
+          or other third-party source hosts.
+        </p>
+      </section>
+
+      <section aria-labelledby="use">
+        <h2 id="use">How Information Is Used</h2>
+        <p>
+          DeStock uses local recent searches and saved shots to provide app
+          features requested by the user. Network requests are used to return
+          search results, load thumbnails or keyframes, stream previews or
+          clips, and open source material.
+        </p>
+        <p>
+          DeStock does not provide accounts, cloud sync, user uploads, in-app
+          purchases, advertising, or analytics tracking.
+        </p>
+      </section>
+
+      <section aria-labelledby="security">
+        <h2 id="security">Security</h2>
+        <p>
+          The app requires secure network traffic and does not permit cleartext
+          HTTP traffic in its Android manifest. Third-party services are
+          responsible for their own infrastructure and retention practices.
+        </p>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">Retention and Deletion</h2>
+        <p>
+          Local recent searches and saved shots remain on the device until the
+          user removes them, clears app data, or uninstalls the app.
+        </p>
+        <p>
+          Search queries and media or source requests sent to third parties may
+          be retained by those third parties according to their own policies.
+          The publisher should confirm those practices before making final
+          store declarations.
+        </p>
+      </section>
+
+      <section aria-labelledby="external">
+        <h2 id="external">External Links</h2>
+        <p>
+          DeStock may open external websites such as Destockd, Archive.org,
+          the National Archives, or other source pages. Those websites are not
+          operated by DeStock and have their own privacy practices.
+        </p>
+      </section>
+
+      <section aria-labelledby="children">
+        <h2 id="children">Children</h2>
+        <p>
+          DeStock is not designed for children. Archival and research footage
+          may include historical events, war imagery, weapons, or other mature
+          material. The publisher should target the app to adults unless a full
+          catalog and policy review supports a different decision.
+        </p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">Changes to This Policy</h2>
+        <p>
+          This policy may be updated when DeStock's features, data practices,
+          service providers, or legal requirements change. The effective date
+          will be updated when material changes are made.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>
+          Questions about this policy can be sent to
+          <a href="mailto:masoodbarkiwork@gmail.com">masoodbarkiwork@gmail.com</a>.
+        </p>
+
+        
+      </section>
+    </main>
+
+    <footer>
+      © 2026 DeStock. Privacy Policy.
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Firefly Exit privacy policy: local game progress, Google advertising and consent choices, website hosting, and support.">
+  <meta name="theme-color" content="#0c252b">
+  <title>Privacy policy · Firefly Exit</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://nothing-all-glitch.github.io/firefly-exit-privacy/">
+</head>
+<body>
+  <a class="skip" href="#policy">Skip to policy</a>
+  <header class="site-header wrap">
+    <a class="brand" href="https://nothing-all-glitch.github.io/firefly-exit-site/"><img src="assets/icon.svg" width="44" height="44" alt=""><span>Firefly Exit</span></a>
+    <a class="back" href="https://nothing-all-glitch.github.io/firefly-exit-site/">About the game <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="policy" class="wrap">
+    <div class="intro">
+      <p class="eyebrow">Your progress. Your choices.</p>
+      <h1>Privacy policy</h1>
+      <p class="lede">This policy explains information handled by Firefly Exit, its advertising and consent services, and these public information pages.</p>
+      <p class="date">Effective and last updated: <time datetime="2026-10-11">11 October 2026</time></p>
+    </div>
+    <div class="policy-layout">
+      <nav class="contents" aria-label="Policy sections">
+        <span>On this page</span>
+        <a href="#scope">Who we are</a>
+        <a href="#local">Local game data</a>
+        <a href="#ads">Advertising data</a>
+        <a href="#choices">Consent &amp; choices</a>
+        <a href="#age">Age &amp; audience</a>
+        <a href="#retention">Retention &amp; security</a>
+        <a href="#website">Website &amp; support</a>
+        <a href="#contact">Contact &amp; updates</a>
+      </nav>
+      <article class="policy-body">
+        <section id="scope">
+          <h2>1. Who we are and what this covers</h2>
+          <p>Firefly Exit is a puzzle game developed by <strong>Masood Ur Rehman</strong>. Contact: <a href="mailto:masoodbarkiwork@gmail.com">masoodbarkiwork@gmail.com</a>. Its Android package is <code>com.nomorepaid.fireflyexit</code>.</p>
+          <p>The game is currently in development. This policy describes the implemented game and Android advertising integration reviewed on the date above, as well as the developer and privacy websites. A public store release has not been announced on these pages.</p>
+          <p>The game has no player account or developer-operated cloud-save service. Local game storage and third-party advertising processing are described separately below.</p>
+        </section>
+        <section id="local">
+          <h2>2. Game progress and settings on your device</h2>
+          <p>The game stores a local save in its app's web storage. It contains:</p>
+          <ul>
+            <li>Campaign and daily-puzzle completion and best star scores.</li>
+            <li>Your selected lantern and preferences for sounds, music, touch feedback and calmer motion.</li>
+            <li>An unfinished puzzle, including remaining trails, hearts, mistakes, hints, undo history and earned extra-hint credits.</li>
+          </ul>
+          <p>This storage lets you resume play and keep your preferences. The daily puzzle is generated on your device using its local date. The inspected game code does not send the save to a developer server or add a separate analytics or crash-reporting service.</p>
+          <p>You can remove the local save by clearing Firefly Exit's app storage in Android settings. In a browser build, clear that game's site data; cached game files may also be stored locally for offline play. Clearing data removes progress and settings. Android backup is enabled, so platform or device backups may preserve or restore copies; manage those backups through your device or platform settings.</p>
+        </section>
+        <section id="ads">
+          <h2>3. Google advertising and information it handles</h2>
+          <p>Android builds integrate <strong>Google AdMob / Google Mobile Ads</strong> for optional rewarded ads that give extra hints and occasional interstitial ads between completed campaign levels. The current configuration defaults to non-personalized ad requests.</p>
+          <p>Google's official Mobile Ads disclosure describes automatic collection and sharing of the following information by its SDK:</p>
+          <ul>
+            <li><strong>IP address</strong>, which may be used to estimate a device's general location.</li>
+            <li><strong>Product interactions</strong>, such as app launches, taps and video views.</li>
+            <li><strong>Diagnostic information</strong>, such as launch time, hangs and energy usage.</li>
+            <li><strong>Device and account identifiers</strong>, such as the Android advertising ID, app-set ID and, where applicable, identifiers related to signed-in accounts.</li>
+          </ul>
+          <p>Google documents purposes including advertising, analytics and fraud prevention. Its SDK disclosure states that collected data is encrypted in transit using TLS. Non-personalized ads use contextual information and can still use mobile identifiers for purposes such as frequency capping and aggregated ad reporting. They do not mean that no information is collected or shared.</p>
+          <p>The inspected Android integration pins Mobile Ads <strong>25.4.0</strong> and Google's User Messaging Platform (UMP) <strong>4.0.0</strong>. Google's current Mobile Ads disclosure refers to a newer SDK release; the categories above are Google's current published guidance, rather than a claim that every network request from this particular build has been independently measured.</p>
+          <p>Read <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's SDK data disclosure</a>, its <a href="https://support.google.com/admob/answer/7676680?hl=en">personalized and non-personalized ads explanation</a>, <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">information for people using apps with Google services</a>.</p>
+        </section>
+        <section id="choices">
+          <h2>4. Consent and your advertising choices</h2>
+          <p>The app asks Google's UMP for updated consent information before initializing or loading ads. UMP may present a privacy or consent form when required and available. The game checks UMP's <code>canRequestAds</code> result before allowing ad requests. The consent-information update itself communicates with Google; this flow does not imply that no information is processed before a form appears.</p>
+          <p>UMP manages consent state and privacy choices. Relevant consent signals are stored locally by the SDK and used in privacy and advertising requests; these are separate from the game-progress save. Google describes <a href="https://developers.google.com/admob/android/privacy/gdpr?hl=en">GDPR consent signals</a> and <a href="https://developers.google.com/admob/android/privacy/us-states?hl=en">US state privacy signals</a> in its regional guidance.</p>
+          <p>When UMP reports that a privacy-options entry point is required, the game's Settings screen offers <strong>Ad privacy choices</strong>. Use it to revisit the available choices. Its availability and the options displayed depend on Google's messages, your region and the SDK's consent state. The app rechecks consent and refreshes ad readiness after this form is closed. If consent, configuration or network checks fail, ads may be unavailable while the puzzle game remains playable.</p>
+          <p>You can also manage, reset or delete your Android advertising ID using the controls available on your device; paths vary by Android version. Google's <a href="https://support.google.com/googleplay/android-developer/answer/6048248?hl=en">advertising ID guidance</a> describes these controls. Google's <a href="https://myadcenter.google.com/">My Ad Center</a> provides additional Google ad settings. These controls have different scopes and do not erase all information that a service may already hold.</p>
+          <p>For details on the consent service, see <a href="https://developers.google.com/admob/android/privacy">Google's UMP guidance</a>. For privacy questions or requests concerning information handled by the developer, use the contact below. Requests concerning Google's processing may also need to be made to Google.</p>
+        </section>
+        <section id="age">
+          <h2>5. Intended audience and age</h2>
+          <p>Firefly Exit is intended for people aged <strong>13 and older</strong> and is not designed for children under 13. An audience label of 13+ does not establish the legal age for privacy consent in every country. The inspected game does not verify each player's age, and privacy rights and any parental or guardian consent requirements vary by location.</p>
+          <p>If you believe information has been provided inappropriately by a child, contact the developer so the situation can be reviewed. Google's consent and advertising controls are described above; this policy does not assert that an age label or an SDK alone guarantees compliance with every law.</p>
+        </section>
+        <section id="retention">
+          <h2>6. Retention, deletion and security</h2>
+          <p>The game keeps local progress and settings until they are changed, replaced or removed from app or browser storage. It has no timed save-deletion rule. Device backups may have their own retention and restoration behavior.</p>
+          <p>Google controls the retention and deletion of information processed by its services under its policies and available account or device controls. See <a href="https://policies.google.com/technologies/retention">Google's retention explanation</a>. The developer cannot directly delete every identifier or record held by Google or your device's backup provider.</p>
+          <p>These websites use HTTPS, and Google documents TLS for Mobile Ads data in transit. Local saves use the device's app or browser storage. No storage or transmission method can be guaranteed completely secure.</p>
+        </section>
+        <section id="website">
+          <h2>7. These websites and support email</h2>
+          <p>The developer and privacy pages are hosted on <strong>GitHub Pages</strong>. We do not add analytics, advertising scripts or tracking cookies to them. GitHub states that it logs and stores visitors' IP addresses for security, regardless of whether a visitor is signed in. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a> and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+          <p>If you email support, the developer receives your email address and whatever message, attachments or other information you choose to send, and uses them to respond to your request. Email providers also process messages under their own policies. Avoid including unnecessary sensitive information. To ask about or request deletion of your support correspondence, email the address below.</p>
+          <p>Links to Google or other external services open resources governed by those providers' policies.</p>
+        </section>
+        <section id="contact">
+          <h2>8. Contact and policy updates</h2>
+          <p>For questions, privacy requests or concerns, contact <strong>Masood Ur Rehman</strong> at <a href="mailto:masoodbarkiwork@gmail.com">masoodbarkiwork@gmail.com</a>. Depending on your location and the processing involved, you may have rights to access, correct or delete information, object to certain processing, or withdraw consent. Tell us what your request concerns so it can be directed appropriately.</p>
+          <p>This policy may change as the game or its services change. Updates will be posted here with a revised date. Material changes to the actual app configuration should be reflected in the policy before the affected release.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="wrap footer"><span>Firefly Exit · Masood Ur Rehman</span><a href="mailto:masoodbarkiwork@gmail.com">Contact support</a></footer>
+</body>
+</html>
