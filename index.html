@@ -1,55 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Deoldify - Old Photo Colorizer</title>
-  <meta name="description" content="Deoldify colorizes black-and-white photos on Android.">
-  <style>
-    :root { color-scheme: light dark; --bg:#0f1020; --card:#191b33; --text:#f5f7ff; --muted:#b8bed9; --accent:#8b5cf6; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: radial-gradient(circle at top left, #3b2f80, var(--bg)); color:var(--text); line-height:1.6; }
-    main { max-width: 980px; margin: 0 auto; padding: 56px 20px; }
-    .hero { padding: 48px 0; }
-    .badge { display:inline-block; padding:6px 12px; border:1px solid rgba(255,255,255,.2); border-radius:999px; color:var(--muted); }
-    h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height:1; margin: 18px 0; }
-    h2 { margin-top: 36px; }
-    p { color: var(--muted); font-size: 1.05rem; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:16px; margin-top:28px; }
-    .card { background: rgba(25,27,51,.82); border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:20px; }
-    a { color:#c4b5fd; }
-    .cta { display:inline-block; margin-top:18px; background:var(--accent); color:white; padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:700; }
-    footer { margin-top:48px; padding-top:24px; border-top:1px solid rgba(255,255,255,.12); color:var(--muted); font-size:.95rem; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masood Ur Rehman · Apps and Games</title>
+<meta name="description" content="Android apps and games by Masood Ur Rehman, with privacy policies and support pages.">
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--text:#1d1f27;--muted:#5d6272;--line:#e3e1d9;--accent:#4f46e5}
+@media (prefers-color-scheme:dark){:root{--bg:#14151b;--card:#1d1f29;--text:#f1f2f6;--muted:#a3a8ba;--line:#2e3140;--accent:#a5b4fc}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+main{max-width:960px;margin:0 auto;padding:48px 16px}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:0 0 8px}
+h2{margin:44px 0 14px;font-size:1.25rem}
+.lead{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.92rem}
+a{color:var(--accent)}
+footer{margin-top:48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:16px}
+</style>
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <span class="badge">Android photo colorization app</span>
-      <h1>Deoldify</h1>
-      <p>Deoldify helps you bring old black-and-white photos back to life with colorization on your Android device.</p>
-      <a class="cta" href="support.html">Contact support</a>
-    </section>
+<main>
+<h1>Apps and games</h1>
+<p class="lead">Android apps and games by Masood Ur Rehman. Each one has its own privacy policy.</p>
 
-    <section class="grid" aria-label="Features">
-      <div class="card"><h2>Select</h2><p>Choose an existing image or capture a new photo using the camera.</p></div>
-      <div class="card"><h2>Colorize</h2><p>Run photo colorization locally on the device after the model is available.</p></div>
-      <div class="card"><h2>Save & Share</h2><p>Save your colorized image to the gallery or share it through Android's share sheet.</p></div>
-    </section>
+<h2>Games</h2>
+<div class="grid">
+<div class="card"><h3>HomePet</h3><p>A pet that lives on your phone. Your pet's save stays on your device.</p><div class="links"><a href="/homepet-privacy/">Privacy policy</a></div></div>
+<div class="card"><h3>One Pixel</h3><p>Precision arcade. Hold, release, and stop just below the limit.</p><div class="links"><a href="/one-pixel-site/">Website</a><a href="/one-pixel-privacy/">Privacy policy</a></div></div>
+<div class="card"><h3>Wiki Restore</h3><p>A sorting game. Your save stays on your phone.</p><div class="links"><a href="/wikirestore-privacy/">Privacy policy</a></div></div>
+<div class="card"><h3>Parcel Panic</h3><p>Tap the switches, route the shapes and keep the conveyor moving.</p><div class="links"><a href="/parcel-panic-site/">Website</a><a href="/parcel-panic-privacy/">Privacy policy</a></div></div>
+<div class="card"><h3>Ribbon Reveal</h3><p>Cozy offline ribbon puzzles and collectible keepsakes.</p><div class="links"><a href="/ribbon-reveal-site/">Website</a><a href="/ribbon-reveal-privacy/">Privacy policy</a></div></div>
+<div class="card"><h3>Firefly Exit</h3><p>Untangle glowing arrow trails and guide every firefly home.</p><div class="links"><a href="/firefly-exit-site/">Website</a><a href="/firefly-exit-privacy/">Privacy policy</a></div></div>
+</div>
 
-    <section>
-      <h2>Legal and support</h2>
-      <p>
-        <a href="privacy-policy.html">Privacy Policy</a> ·
-        <a href="terms-of-use.html">Terms of Use</a> ·
-        <a href="support.html">Support</a> ·
-        <a href="data-deletion.html">Data deletion/help</a>
-      </p>
-    </section>
+<h2>Apps</h2>
+<div class="grid">
+<div class="card"><h3>DeOldify</h3><p>Colorize and restore old photos on your phone. Photos are never uploaded.</p><div class="links"><a href="/deoldifygemini/">Website</a><a href="/deoldifygemini/privacy-policy.html">Privacy</a><a href="/deoldifygemini/support.html">Support</a><a href="/deoldifygemini/terms-of-use.html">Terms</a><a href="/deoldifygemini/data-deletion.html">Data deletion</a></div></div>
+<div class="card"><h3>Bonafide</h3><p>Visa evidence pack.</p><div class="links"><a href="/bonafide-privacy/">Privacy policy</a></div></div>
+<div class="card"><h3>Lost Places</h3><p>Lost places to explore.</p><div class="links"><a href="/lostplaces/">Website</a><a href="/lostplaces/privacy/">Privacy policy</a></div></div>
+<div class="card"><h3>Quiet Colors</h3><p>&nbsp;</p><div class="links"><a href="/quiet-colors/privacy-policy.html">Privacy policy</a></div></div>
+<div class="card"><h3>TrustLens</h3><p>&nbsp;</p><div class="links"><a href="/trustlens/privacy-policy.html">Privacy policy</a><a href="/trustlens/support.html">Support</a></div></div>
+</div>
 
-    <footer>
-      <p>© 2026 Deoldify. Support: <a href="mailto:masoodbarkiwork@gmail.com">masoodbarkiwork@gmail.com</a></p>
-    </footer>
-  </main>
+<footer>© Masood Ur Rehman</footer>
+</main>
 </body>
 </html>
